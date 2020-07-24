@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    private Button btn_start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick (View view) {
-        Button btn_start = (Button) findViewById(R.id.start);
+        btn_start = (Button) findViewById(R.id.start_btn);
         btn_start.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
